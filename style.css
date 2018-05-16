@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin");
+body {
+  margin: 0;
+  padding: 0;
+  background: #000; }
+
+p {
+  color: #FFFF82; }
+
+.intro header[role="banner"] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: intro 6s ease-out 1s;
+  color: #4bd5ee;
+  font-weight: 400;
+  font-size: 300%;
+  opacity: 0;
+  font-family: 'Libre Franklin', sans-serif; }
+  .intro header[role="banner"] h1 {
+    font-size: 25px;
+    font-weight: 300; }
+  .intro header[role="banner"] h2 {
+    font-size: 25px;
+    font-weight: 300; }
+
+.requirements,
+.benefits,
+.participation,
+.explanation,
+.summary,
+.preamble {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  transform: perspective(300px) rotateX(25deg);
+  transform-origin: 50% 100%;
+  text-align: justify;
+  position: absolute;
+  margin-left: -9em;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 350%;
+  height: 50em;
+  width: 18em;
+  bottom: 0;
+  left: 50%; }
+
+.requirements:after,
+.benefits:after,
+.participation:after,
+.explanation:after,
+.summary:after,
+.preamble:after {
+  position: absolute;
+  content: ' ';
+  bottom: 60%;
+  left: 0;
+  right: 0;
+  top: 0; }
+
+.summary p {
+  animation: scroll 100s linear 16s;
+  position: absolute;
+  top: 100%;
+  color: yellow; }
+  .summary p:last-child {
+    animation: scroll 100s linear 20s; }
+
+.preamble h3 {
+  width: 100%;
+  animation: scroll 100s linear 24s;
+  position: absolute;
+  top: 100%;
+  color: yellow;
+  text-align: center; }
+
+.preamble p {
+  animation: scroll 100s linear 26s;
+  position: absolute;
+  top: 100%;
+  color: yellow; }
+  .preamble p:nth-child(2) {
+    animation: scroll 100s linear 32s; }
+  .preamble p:last-child {
+    animation: scroll 100s linear 37s; }
+
+.explanation h3 {
+  width: 100%;
+  animation: scroll 100s linear 45s;
+  position: absolute;
+  top: 100%;
+  color: yellow;
+  text-align: center; }
+
+.explanation p {
+  position: absolute;
+  top: 100%;
+  color: yellow;
+  animation: scroll 100s linear 47s; }
+  .explanation p:last-child {
+    animation: scroll 100s linear 56s; }
+
+.participation h3 {
+  width: 100%;
+  animation: scroll 100s linear 68s;
+  position: absolute;
+  top: 100%;
+  color: yellow;
+  text-align: center; }
+
+.participation p {
+  animation: scroll 100s linear 70s;
+  position: absolute;
+  top: 100%;
+  color: yellow; }
+  .participation p:nth-child(3) {
+    animation: scroll 100s linear 78s; }
+  .participation p:last-child {
+    animation: scroll 100s linear 84s; }
+
+.benefits h3 {
+  width: 100%;
+  animation: scroll 100s linear 94s;
+  position: absolute;
+  top: 100%;
+  color: yellow;
+  text-align: center; }
+
+.benefits p {
+  animation: scroll 100s linear 96s;
+  position: absolute;
+  top: 100%;
+  color: yellow; }
+
+.requirements h3 {
+  width: 100%;
+  animation: scroll 100s linear 106s;
+  position: absolute;
+  top: 100%;
+  color: yellow;
+  text-align: center; }
+
+.requirements p {
+  width: 100%;
+  animation: scroll 100s linear 108s;
+  position: absolute;
+  top: 100%;
+  color: yellow; }
+  .requirements p:nth-child(3) {
+    animation: scroll 100s linear 118s; }
+  .requirements p:nth-child(4) {
+    animation: scroll 100s linear 134s; }
+  .requirements p:nth-child(5) {
+    animation: scroll 100s linear 143s; }
+  .requirements p:last-child {
+    animation: scroll 100s linear 150s; }
+
+footer,
+aside {
+  display: none; }
+
+@keyframes intro {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes scroll {
+  0% {
+    top: 100%; }
+  100% {
+    top: -170%; } }
+
+/*# sourceMappingURL=style.css.map */
